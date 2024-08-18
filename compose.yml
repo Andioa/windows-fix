@@ -3,7 +3,10 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "win11"
+      VERSION: "win10"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
+      DISK_SIZE: "25G"
     devices:
       - /dev/kvm
     cap_add:
